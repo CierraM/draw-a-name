@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Henny+Penny&family=Syne+Tactile&display=swap');
+$gigantic: 7em;
+$hat-color: black;
+$background-color:white;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 2fr 2fr;
+
+}
+
+h1{
+    font-family: "Almendra Display";
+    font-size: $gigantic;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(126, 3, 3);
+    grid-column: 1/3;
+}
+
+.hat{
+transform: rotate(180deg);
+max-width: 50vw;
+margin-left:auto;
+display: block;
+grid-row: 3/5;
+}
+
+#form{
+    border: 4px dashed rgb(126, 3, 3);
+    padding: 20px;
+    grid-row: 2/4;
+    text-align: center;
+}
+
+label{
+    color: yellow;
+}
+
+.add{
+    grid-column:1/2;
+    height: 70px;
+    width: 150px;
+    border-radius: 30px;
+    margin: 20px auto;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.submit{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
